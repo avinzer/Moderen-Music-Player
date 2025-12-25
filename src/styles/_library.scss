@@ -1,0 +1,20 @@
+.libraryContainer {
+  height: 55rem;
+  width: 100rem;
+  background-color: rgb(0, 13, 21, 0.2);
+  backdrop-filter: blur(15px);
+  border-radius: 2rem;
+  box-shadow: 0 4px 30px rgba(224, 225, 235, 0.1);
+}
+
+.title {
+  margin: 2.5rem 2rem;
+  color: rgb(34, 160, 160);
+}
+
+.songPlayer {
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  background-color: black;
+}

@@ -1,0 +1,53 @@
+
+.albumesContainer {
+  height: 23rem;
+  display: flex;
+  flex: 1;
+  margin: 2.5rem 2rem;
+  padding: 2rem;
+  background-color: rgba(8, 55, 85, 0.315);
+  box-shadow: 0px 0px 80px rgba(8, 55, 85);
+  border-radius: 2rem;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.albumContent {
+  display: flex;
+  flex-direction: column;
+  width: 18rem;
+  height: 18rem;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: rgba(30, 96, 138, 0.2);
+  backdrop-filter: blur(20px);
+  flex-shrink: 0;
+  border-radius: 2rem;
+  justify-content: center;
+  transition: 0.5s all;
+}
+
+.albumContent:hover {
+    box-shadow: 0 0px 30px rgba(30, 96, 138, 0.6);
+}
+
+.imgCover {
+  margin: auto;
+  width: 90%;
+  height: 80%;
+  border-radius: 2rem;
+}
+
+.songTitleContainer {
+    margin: 0rem 1rem;
+    color: white;
+}
+
+.songTitle {
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+}
+
+.songTitleContainer p {
+    color: rgb(255, 255, 255, 0.6);
+}

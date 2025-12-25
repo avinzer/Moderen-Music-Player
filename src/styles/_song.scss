@@ -1,0 +1,16 @@
+
+.song {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.songCover {
+    display: flex;
+    width: 8rem;
+    height: 8rem;
+    flex: 1;
+    border-radius: 50%;
+}
