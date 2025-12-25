@@ -1,7 +1,9 @@
 /* eslint-disable no-unused-vars */
 import { v4 as uuidv4 } from "uuid";
-const ip = "192.168.77.28:3000";
-const local = "localhost:5173";
+const ip = "moderen-music-player.vercel.app";
+const localhost = "localhost:5173";
+
+const local = ip || localhost;
 
 const chillHop = () => {
   return [
