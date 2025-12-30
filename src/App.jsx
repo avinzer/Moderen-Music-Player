@@ -16,16 +16,55 @@ const App = () => {
     } else {
       audioRef.current.pause();
     }
-  }, [isPlaying]);
+  }, [currentSong, isPlaying]);
   const playSongHandler = () => {
     setIsPlaying(!isPlaying);
   };
 
+  const playNextSongHandler = () => {
+    let currentSongId = songs.findIndex((song) => song.id === currentSong.id)
+    setCurrentSong(songs[(currentSongId + 1) % 15])
+    setIsPlaying(true);
+  }
+
+  const playPrevSongHandler = () => {
+    let currentSongId = songs.findIndex((song) => song.id === currentSong.id)
+    if (currentSongId === 0) {
+      setCurrentSong(songs[14])
+    } else {
+      setCurrentSong(songs[(currentSongId - 1) % 15])
+    }
+    setIsPlaying(true);
+  };
+
+  const playSongClickHandler = (song) => {
+    setCurrentSong(song);
+    setIsPlaying(true);
+  };
+
+  const onEndedHandler = () => {
+    playNextSongHandler();
+  };
+
+  useEffect(() => {
+    const audio = audioRef.current;
+    audio.addEventListener("ended", onEndedHandler);
+    return () => {
+      audio.removeEventListener("ended", onEndedHandler);
+    };
+  }, [currentSong]);
   return (
     <div className="container">
-      <Library songs={songs} song={currentSong}/>
+      <Library
+        isPlaying={isPlaying}
+        songs={songs}
+        song={currentSong}
+        playNextSongHandler={playNextSongHandler}
+        playSongHandler={playSongHandler}
+        playSongClickHandler={playSongClickHandler}
+        playPrevSongHandler={playPrevSongHandler}
+      />
       <audio src={currentSong.audio} ref={audioRef}></audio>
-      <button onClick={playSongHandler}>Click</button>
     </div>
   );
 };

@@ -1,6 +1,9 @@
 .player {
-    background-color: red;
-    width: 50%;
+    display: flex;
+    width: 30%;
     height: 5rem;
-    margin: 2rem;
+    margin: 4rem;
+    padding: 6rem;
+    justify-content: space-between;
+    align-items: center;
 }

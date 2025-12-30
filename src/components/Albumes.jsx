@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 
-export const Albumes = ({ songs }) => {
+export const Albumes = ({ songs, playSongClickHandler }) => {
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -21,7 +21,7 @@ export const Albumes = ({ songs }) => {
 
   const albumes = songs.map((song) => {
     return (
-      <div className="albumContent" key={song.id}>
+      <div onClick={() => playSongClickHandler(song)} className={`albumContent album${song.songId}`} key={song.id}>
         <img className="imgCover" src={song.cover} alt="" />
         <div className="songTitleContainer">
             <h1 className="songTitle">{song.name}</h1>

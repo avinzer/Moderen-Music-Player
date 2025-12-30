@@ -14,6 +14,7 @@ const chillHop = () => {
       audio: `http://${local}/music/Anandile_-_Gamer_Fili,_Solo_G_&_XO.mp3`,
       id: uuidv4(),
       active: true,
+      songId: 1,
     },
     {
       name: "Ayney(ዓይነይ)",
@@ -22,6 +23,7 @@ const chillHop = () => {
       audio: `http://${local}/music/Ayney_[ዓይነይ]_-_Gamer_Fili,_Solo_G,_Steve_Colombo_&_Reshid_Hussen.mp3`,
       id: uuidv4(),
       active: false,
+      songId: 2,
     },
     {
       name: "Enata",
@@ -30,6 +32,7 @@ const chillHop = () => {
       audio: `http://${local}/music/Enata_-_Gamer_Fili,_Solo_G_&_Soliana_Zerabruk.mp3`,
       id: uuidv4(),
       active: false,
+      songId: 3,
     },
     {
       name: "Expo(OUTRO)",
@@ -38,6 +41,7 @@ const chillHop = () => {
       audio: `http://${local}/music/EXPO_(OUTRO)_-_Gamer_Fili.mp3`,
       id: uuidv4(),
       active: false,
+      songId: 4,
     },
     {
       name: "Kemdlayki",
@@ -46,6 +50,7 @@ const chillHop = () => {
       audio: `http://${local}/music/Kemdlayki_[ከምድላይኪ]_-_Gamer_Fili_&_Solo_G.mp3`,
       id: uuidv4(),
       active: false,
+      songId: 5,
     },
     {
       name: "Kasieta(ካሴታ)",
@@ -54,6 +59,7 @@ const chillHop = () => {
       audio: `http://${local}/music/KASIETA_[ካሴታ]_-_Gamer_Fili_&_KUSTO.mp3`,
       id: uuidv4(),
       active: false,
+      songId: 6,
     },
     {
       name: "Magota",
@@ -62,6 +68,7 @@ const chillHop = () => {
       audio: `http://${local}/music/Magota_-_Gamer_Fili,_Solo_G_&_XO.mp3`,
       id: uuidv4(),
       active: false,
+      songId: 7,
     },
     {
       name: "Merawi",
@@ -70,6 +77,7 @@ const chillHop = () => {
       audio: `http://${local}/music/Merawi_[መርዓዊ]_-_Gamer_Fili,_Solo_G_&_Adam_TG.mp3`,
       id: uuidv4(),
       active: false,
+      songId: 8,
     },
     {
       name: "Nameke",
@@ -78,6 +86,7 @@ const chillHop = () => {
       audio: `http://${local}/music/Nameke_-_Gamer_Fili,_Solo_G_&_Soliana_Zerabruk.mp3`,
       id: uuidv4(),
       active: false,
+      songId: 9,
     },
     {
       name: "Nay Hlmey Gual",
@@ -86,6 +95,7 @@ const chillHop = () => {
       audio: `http://${local}/music/Nay_Hlmey_Gual_[ናይ_ሕልመይ_ጓል]_-_Gamer_Fili_&_THE_IT_NEGER.mp3`,
       id: uuidv4(),
       active: false,
+      songId: 10,
     },
     {
       name: "Nebit Nay Fqrki",
@@ -94,6 +104,7 @@ const chillHop = () => {
       audio: `http://${local}/music/Nebit_nay_fqrki_[ነቢት_ናይ_ፍቕርኺ]_-_Gamer_Fili,_THE_IT_NEGER_&_KUSTO.mp3`,
       id: uuidv4(),
       active: false,
+      songId: 11,
     },
     {
       name: "Qanza Lbi",
@@ -102,6 +113,8 @@ const chillHop = () => {
       audio: `http://${local}/music/Qanza_lbi_(Bonus_Track)_[ቃንዛ_ልቢ]_Gamer_Fili_&_Alex_Tewelde.mp3`,
       id: uuidv4(),
       active: false,
+
+      songId: 12,
     },
     {
       name: "Shush",
@@ -110,6 +123,7 @@ const chillHop = () => {
       audio: `http://${local}/music/Shush_[ሹሽ]_-_Gamer_Fili_&_SIETO.mp3`,
       id: uuidv4(),
       active: false,
+      songId: 13,
     },
     {
       name: "Soliela Sola",
@@ -118,6 +132,7 @@ const chillHop = () => {
       audio: `http://${local}/music/Soliela_Sola_-_Gamer_Fili,_Solo_G.mp3`,
       id: uuidv4(),
       active: false,
+      songId: 14,
     },
     {
       name: "Wedi Mama",
@@ -126,6 +141,7 @@ const chillHop = () => {
       audio: `http://${local}/music/Wedi_Mama[ወዲ_ማማ]_-_Gamer_Fili_&_SIETO.mp3`,
       id: uuidv4(),
       active: false,
+      songId: 15,
     },
   ];
 }
